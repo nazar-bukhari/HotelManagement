@@ -25,7 +25,7 @@ public class Guest {
 
     @NotNull
     @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "room_id") //@Joincolumn is needed if different column rather than id is used for foreign key
+    @JoinColumn(name = "room_id") //@Joincolumn is needed if different column rather than id is used for foreign key
     private Room room;
 
     @Temporal(TemporalType.TIMESTAMP)
